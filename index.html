@@ -1,101 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/animate.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo-arbol.jpg" type="image/x-icon">
-    <script type="text/javascript" src=""></script>
-    <title>Fundacion Ficyma</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="shortcut icon" href="img/fycima logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Fundación Ficyma</title>
 </head>
-<body>
-    <header id="header-align">
-        <div id="header-wraper">
-            <img src="images/logofundacion.jpg" id="logo-fundacion" alt="logo Fundacion">
-            <img src="images/header1.jpeg" alt="Arboles" id="header-image">
-        </div>
-    </header>
-    <nav>
-        <button class="nav-button">Inicio</button>
-        <button class="nav-button">Nosotros</button>
-        <button class="nav-button">Eventos</button>
-        <button class="nav-button">Colabora con nosotros</button>
-        <button class="nav-button">Contacto</button>
-    </nav>
-    <main>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <img src="images/testimagen1.jpg" style="width:100%; max-height: 500px">
-            <div class="text"></div>
+<body>
+    <!--imagen de plantas que agarra el header y la presentacion-->
+    <div class="background-fundacion">
+    <header class="mx-0 container-header-black box-shadow-smooth">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid">
+                <!--logo fundacion-->
+                <a class="navbar-brand " href="index.html"><img src="img/fycima logo.png" alt="Logo Fundacion" height="100px"></a>
+                <!--icono de collapse del navbar al llegar a cierta cantidad de pixeles-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <!--navbar con botones correspondientes-->
+                <div class="collapse navbar-collapse ms-auto me-auto flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav transition-top">
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="#">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item background-nav-button nav-button">
+                            <a class="nav-link text-white" href="#">Colabora Con Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-            <img src="images/testimagen3.jpg" style="width:100%; max-height: 500px;">
-            <div class="text"></div>
+        <!--fin navbar-->
+        </nav>
+    </header>
+    <main >
+        <!--container de breve descripcion de la fundacion-->
+        <div class=" container-fundacion text-white position-relative  transition2 box-shadow-common">
+            <div class="container container-background-black center box-shadow-smooth">
+                <!--texto introduccion fundacion-->
+                <div class="container-md">
+                    <h1 class="display-4 text-center px-5">
+                        Fundación por la Integración de la Cultura y el Medio Ambiente
+                    </h1>
+                    <!--Separación de linea mediante una raya-->
+                    <hr class="my-4">
+                    <h4>
+                        Labore porro asperiores maxime ab delectus suscipit dicta Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sed eveniet molestiae vero quibusdam voluptates. inventore repudiandae fugiat repellendus facilis, nam illo vitae
+                        soluta voluptate dignissimos laudantium placeat deleniti?
+                    </h4>
+                </div>
             </div>
-        
-        <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--final contenedor texto introduccion-->
         </div>
-        <!-- SlideDown JavaScript Function -->
-<script>
-    var slideIndex = 0;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-    </script>
-    <article class="main-article">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Maxime tenetur facere distinctio autem cupiditate reiciendis 
-         vitae doloribus fuga dolorem doloremque. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. 
-         Accusamus tempora quibusdam maiores ea
-          ipsam reiciendis, quia sint natus quis deserunt.
-    </article>
-    <article class="box">
-        <div class="box">
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
-            <div><img class="box-border" src="https://www.flexilabels.co.uk/files/labels/recycling-symbol-pre-printed-arrow-logo-green-flexi-labels.png.png" alt="" width="300px" height="300px"></div>
+    <!--final div de la imagen de fondo-->
+    </div>
+        <!--seccion eventos-->
+        <div class="container container-eventos mw-100 pt-5 transition1">
+            <div class="container-eventos-titulo box-shadow-smooth ">
+                <h2 class="text-white">Eventos</h2>
+            </div>
         </div>
-    </article>
+        <div class="container container-convenios text-center col-12">
+            <h2 class="mb-0">Colaboradores</h2><br>
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+            <img src="img/fycima logo.png" alt="" height="60px">
+
+        </div>
     </main>
 
     <footer>
-        <img src="images/footer1.png" alt="Image footer" id="footer-background">
+        <div class="container-fluid container-footer-background text-white pb-3">
+            <ul class="navbar-nav justify-content-center flex-row pt-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/icons/facebook.png" alt="Facebook" height="31px"></a>
+                </li>
+                <li class="nav-item ps-4">
+                    <a class="nav-link" href="#"><img src="img/icons/instagram.png" alt="Instagram" height="31px"></a>
+                </li>
+                <li class="nav-item ps-4">
+                    <a class="nav-link" href="#"><img src="img/icons/twitter.png" alt="Twitter" height="31px"></a>
+                </li>
+                <li class="nav-item ps-4">
+                    <a class="nav-link" href="#"><img src="img/icons/linkedin.png" alt="linkedin" height="31px"></a>
+                </li>
+            </ul>
+            <div class="footer-info text-center">
+                <img src="img/icons/icons8-gmail-50.png" alt="mail" height="25px">&nbspfundacionficyma@gmail.com<br>
+                <img src="img/icons/icons8-google-maps-old-50.png"alt="ubicacion" height="25px">&nbsp Adolfo Alsina 2725 <br>
+                <img src="img/icons/icons8-google-mobile-50.png"alt="telefono" height="25px">&nbsp +54 11-3115-1364 <br>
+            </div>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
+
 </html>
 
+
+<!--Lista de cosas pendientes para hacer-->
+<!--
+
+-->
